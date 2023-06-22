@@ -10,8 +10,8 @@ const Navbar = () => {
         <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
           <Link href="/" className="flex justify-center items-center">
             <Image
-              src="/logo.svg"
-              alt="Car Hub logo"
+              src="/nutrition.jpg"
+              alt="Nutrition logo"
               width={118}
               height={18}
               className="object-contain"
@@ -21,7 +21,7 @@ const Navbar = () => {
           <CustomButton
             title="Sign In"
             btnType="button"
-            containerStyles="text-primary-blue rounde-full bg-white min-w-[130px]"
+            containerStyles="text-primary-white rounded-full bg-blue-300 min-w-[130px]"
           />
         </nav>
       </header>

@@ -5,13 +5,13 @@ import { Fragment } from "react";
 
 import { Dialog, Transition } from "@headlessui/react";
 
-import { CarProps } from "@/types";
+import { NutritionProps } from "@/types";
 import { generateCarImageUrl } from "@/utils";
 
 interface CarDetailsProps {
   isOpen: boolean;
   closeModal: () => void;
-  car: CarProps;
+  car: NutritionProps;
 }
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
@@ -99,7 +99,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
 
                   <div className="flex-1 flex flex-col gap-2">
                     <h2 className="font-semibold text-xl capitalize">
-                      {car.make} {car.model}
+                      {car.name} ({car.protein_g} g protein)
                     </h2>
                     <div className="mt-3 flex flex-wrap gap-4">
                       {Object.entries(car).map(([key, value]) => (

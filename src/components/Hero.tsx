@@ -8,12 +8,12 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">Find, book, rent a car quickly</h1>
+        <h1 className="hero__title">Healthy, strength, balance</h1>
 
-        <p className="hero__subtitle">Streamline your car rental experience</p>
+        <p className="hero__subtitle">Improve your nutrition</p>
 
         <CustomButton
-          title="Explore Cars"
+          title="Explore Nutrition"
           containerStyles="bg-primary-blue text-white rounded-full mt-10"
           handleClick={handleScroll}
         />
@@ -21,7 +21,12 @@ const Hero = () => {
 
       <div className="hero__image-container">
         <div className="hero__image">
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          <Image
+            src="/nutrition.jpg"
+            alt="nutrition"
+            fill
+            className="object-contain"
+          />
           <div className="hero__image-overlay"></div>
         </div>
       </div>
